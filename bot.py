@@ -196,4 +196,7 @@ async def on_ready():
     await bot.tree.sync()
     print(f"✅ Бот запущений як {bot.user}")
 
-bot.run(config["MTQ2MTQ1NzgyNzUzNjA0ODE1OA.G6EOTu.YKzSqPJ9xPwJxG2KWSgYSDBt8sP_ndBs945NcM"])
+import os
+bot.run(os.getenv("DISCORD_TOKEN"))
+
+
